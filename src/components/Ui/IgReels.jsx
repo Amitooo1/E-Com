@@ -1,10 +1,14 @@
 import React from "react";
+import vid1 from "../../assets/igvideos/vid1.mp4";
+import vid2 from "../../assets/igvideos/vid2.mp4";
+import vid3 from "../../assets/igvideos/vid3.mp4";
+import vid4 from "../../assets/igvideos/vid4.mp4";
 
 const videos = [
-  { src: "/src/assets/igvideos/vid1.mp4", title: "LIVE shopping", desc: "Promote, sell and engage with your audience, all in real time." },
-  { src: "/src/assets/igvideos/vid2.mp4", title: "Shoppable videos", desc: "Create entertaining videos with your products just a tap away." },
-  { src: "/src/assets/igvideos/vid3.mp4", title: "Shop Page", desc: "Display your product catalog within your own in-app shop." },
-  { src: "/src/assets/igvideos/vid4.mp4", title: "Shop Tab", desc: "Display your products on a centralized marketplace." },
+  { src: vid1, title: "LIVE shopping", desc: "Promote, sell and engage with your audience, all in real time." },
+  { src: vid2, title: "Shoppable videos", desc: "Create entertaining videos with your products just a tap away." },
+  { src: vid3, title: "Shop Page", desc: "Display your product catalog within your own in-app shop." },
+  { src: vid4, title: "Shop Tab", desc: "Display your products on a centralized marketplace." },
 ];
 
 const IgReels = () => {
