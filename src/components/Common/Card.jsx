@@ -48,14 +48,13 @@
 import { useEffect, useState } from "react";
 import { ShoppingCart } from "lucide-react";
 import { NavLink } from "react-router";
+import pic1 from "../../assets/pic1.jpg";
+import pic2 from "../../assets/pic2.jpg";
+import pic3 from "../../assets/pic3.jpg";
 
 const Card = () => {
   /* ================= IMAGES FROM LOCAL ================= */
-  const images = [
-    "./src/assets/pic1.jpg",
-    "./src/assets/pic2.jpg",
-    "./src/assets/pic3.jpg",
-  ];
+  const images = [pic1, pic2, pic3];
 
   const [index, setIndex] = useState(0);
 

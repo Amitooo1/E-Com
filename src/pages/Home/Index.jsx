@@ -117,7 +117,7 @@ const HomePage = () => {
         className="py-4 sm:py-16 lg:py-24"
       >
         <div className="relative rounded-2xl overflow-hidden bg-black border shadow-lg pb-4 mx-4 sm:pb-6! sm:pt-1! lg:p-10">
-          <FeaturedCollection />
+          <IgReels />
         </div>        
       </motion.section>
 

@@ -5,20 +5,24 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 
+import pic1 from "../../assets/pic1.jpg";
+import pic2 from "../../assets/pic2.jpg";
+import pic3 from "../../assets/pic3.jpg";
+
 const HeroSlider = () => {
   const slides = [
     {
-      image: "/src/assets/pic1.jpg",
+      image: pic1,
       title: "Redefine Your Style",
       subtitle: "New season. New energy."
     },
     {
-      image: "/src/assets/pic2.jpg",
+      image: pic2,
       title: "Elevated Essentials",
       subtitle: "Minimal. Modern. Magnetic."
     },
     {
-      image: "/src/assets/pic3.jpg",
+      image: pic3,
       title: "Built To Stand Out",
       subtitle: "Crafted for confidence."
     },

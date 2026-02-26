@@ -77,15 +77,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import React, { useEffect, useRef, useState } from "react";
 
+import casuals from "../../assets/casuals.jpg"
+import sports from "../../assets/sports.jpg"
+import sneakers from "../../assets/sneakers.jpg"
+import formals from "../../assets/formals.jpg"
+import Party from "../../assets/Party.jpg"
+
 import "swiper/css";
 import { NavLink } from "react-router-dom";
 
 const categories = [
-  { image: "./src/assets/casuals.jpg" },
-  { image: "./src/assets/sports.jpg" },
-  { image: "./src/assets/sneakers.jpg" },
-  { image: "./src/assets/formals.jpg" },
-  { image: "./src/assets/Party.jpg" },
+  casuals,
+  sports,
+  sneakers,
+  formals,
+  Party
 ];
 
 const ShopByCategory = () => {
@@ -175,7 +181,7 @@ const ShopByCategory = () => {
               <div className="overflow-hidden rounded-2xl shadow-md">
                 <NavLink to='/newarrivals'>
                 <img
-                  src={item.image}
+                  src={item}
                   alt="category"
                   className="w-full h-auto transition duration-300 hover:scale-105"
                 />

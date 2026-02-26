@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 
+import pic1 from "../../assets/men.jpg";
+import pic2 from "../../assets/women.jpg";
+
 const ShopByGender = () => {
   return (
     <section className="py-1 px-4 ">
@@ -27,7 +30,7 @@ const ShopByGender = () => {
         >
           <NavLink to="/man">
             <img
-              src="./src/assets/men.jpg"
+              src={pic1}
               alt="Men"
               className="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
             />
@@ -54,7 +57,7 @@ const ShopByGender = () => {
         >
           <NavLink to="/women">
             <img
-              src="./src/assets/women.jpg"
+              src={pic2}
               alt="Women"
               className="w-full h-[350px] sm:h-[400px] lg:h-[500px] object-cover transition-transform duration-700 group-hover:scale-110"
             />

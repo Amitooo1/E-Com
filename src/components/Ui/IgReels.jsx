@@ -9,7 +9,7 @@ const videos = [
 
 const IgReels = () => {
   return (
-    <div className="bg-black text-white py-20">
+    <div className="bg-black text-white py-12">
       
       {/* ===== Heading ===== */}
       <div className="max-w-6xl mx-auto text-center px-6">
