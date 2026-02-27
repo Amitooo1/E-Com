@@ -8,7 +8,29 @@
   --swiper-navigation-color: white;
   --swiper-pagination-color: #f87171;
 }
+/* Resize navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  width: 24px !important;
+  height: 24px !important;
+}
+@media (min-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+.swiper-pagination-bullet {
+  background-color: #d1d5db !important; 
+  opacity: 1 !important;
+}
 
+.swiper-pagination-bullet-active {
+  transform: scale(2);
+  transition: all 1s ease;
+  background-color: #f87171 !important; 
+}
 
 .filter {
   font-family: "SN Pro", sans-serif;

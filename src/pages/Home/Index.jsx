@@ -21,13 +21,13 @@ const fadeUp = {
 };
 
 const SectionWrapper = ({ children }) => (
-  <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+  <div className="max-w-[1440px] mx-auto px-0 sm:px-6! lg:px-10">
     {children}
   </div>
 );
 
 const GlassCard = ({ children }) => (
-  <div className="relative rounded-2xl bg-white/60 backdrop-blur-lg border border-white/40 shadow-lg p-4 sm:p-8 lg:p-10">
+  <div className="relative rounded-none sm:rounded-2xl bg-white/60 backdrop-blur-lg border border-white/40 shadow-lg p-4 sm:p-8 lg:p-10">
     {children}
   </div>
 );

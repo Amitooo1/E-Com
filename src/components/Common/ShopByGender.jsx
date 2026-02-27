@@ -6,12 +6,22 @@ import pic2 from "../../assets/women.jpg";
 
 const ShopByGender = () => {
   return (
-    <section className="py-1 px-4 ">
+    <section className="py-2 sm:py-8 px-0">
       
       {/* ===== Heading ===== */}
-      <div className="flex items-center justify-center gap-4 mb-14">
+      <div className="flex items-center justify-center gap-3 mb-10 px-2">
         <div className="hidden sm:block flex-1 h-[1px] bg-gray-300" />
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-semibold text-center">
+        <h2
+          className="
+            text-lg 
+            sm:text-3xl! 
+            lg:text-4xl! 
+            font-serif 
+            font-semibold 
+            text-center 
+            whitespace-nowrap
+          "
+        >
           Shop By Gender
         </h2>
         <div className="hidden sm:block flex-1 h-[1px] bg-gray-300" />
@@ -36,11 +46,21 @@ const ShopByGender = () => {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center">
-              <h3 className="text-white text-2xl sm:text-3xl font-bold mb-4">
+            <div
+              className="
+                absolute inset-0 
+                flex flex-col items-center justify-end 
+                pb-6
+                bg-gradient-to-t from-black/70 via-black/30 to-transparent
+                sm:opacity-0 sm:group-hover:opacity-100
+                transition duration-500
+              "
+            >
+              <h3 className="text-white text-xl sm:text-3xl font-bold mb-3 tracking-wide">
                 MEN
               </h3>
-              <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+
+              <button className="bg-white text-black px-5 py-2 rounded-full! text-xs sm:text-sm font-semibold hover:bg-red-400! hover:text-white transition">
                 Explore Now
               </button>
             </div>
@@ -63,11 +83,21 @@ const ShopByGender = () => {
             />
 
             {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center">
-              <h3 className="text-white text-2xl sm:text-3xl font-bold mb-4">
+            <div
+              className="
+                absolute inset-0 
+                flex flex-col items-center justify-end 
+                pb-6
+                bg-gradient-to-t from-black/70 via-black/30 to-transparent
+                sm:opacity-0 sm:group-hover:opacity-100
+                transition duration-500
+              "
+            >
+              <h3 className="text-white text-xl sm:text-3xl font-bold mb-3 tracking-wide">
                 WOMEN
               </h3>
-              <button className="bg-white text-black px-6 py-2 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+
+              <button className="bg-white text-black px-5 py-2 rounded-full! text-xs sm:text-sm font-semibold hover:bg-red-400! hover:text-white transition">
                 Explore Now
               </button>
             </div>

@@ -55,11 +55,11 @@ const Navbar = () => {
             ))}
           </nav>
 
-          {/* Right Section (Now Properly Structured) */}
+          {/* Right Section */}
           <div className="flex items-center gap-4">
 
             {/* Search */}
-            <div className="flex-1 md:flex-none">
+            <div className="flex-1 ml-2 sm:ml-4 md:flex-none">
               <input
                 type="text"
                 placeholder="Search"

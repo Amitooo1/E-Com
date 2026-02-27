@@ -1,12 +1,11 @@
-
 import React, { useEffect, useRef, useState } from "react";
 import Card from "./Card";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { NavLink } from "react-router-dom";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import { NavLink } from "react-router-dom";
 
 const BestSellers = () => {
   const products = Array.from({ length: 8 });
@@ -28,43 +27,42 @@ const BestSellers = () => {
   }, []);
 
   return (
-    <div ref={sectionRef} className="pt-1 sm:pt-6! overflow-x-hidden">
+    <div ref={sectionRef} className="pt-6 sm:pt-8 overflow-x-hidden">
+
       {/* Header */}
-      <div className="flex flex-row items-center sm:flex-row justify-between sm:items-center px-4 sm:px-8 lg:px-12 gap-4 sm:gap-0">
-        
-        <p
-          className={`font-bold font-serif 
-          text-2xl sm:text-3xl lg:text-4xl 
-          pt-3 sm:pt-5 
-          transition-all duration-700 ${
-            show ? "translate-x-0 opacity-100" : "-translate-x-20 opacity-0"
+      <div className="flex items-baseline justify-between px-4 sm:px-6 lg:px-8 mb-2">
+
+        {/* Title */}
+        <h2
+          className={`text-xl! sm:text-3xl! lg:text-4xl!
+          font-serif! font-bold! text-black
+          whitespace-nowrap transition-all duration-700 ${
+            show ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"
           }`}
         >
           Best Sellers
-        </p>
+        </h2>
 
+        {/* View All */}
         <NavLink
-          to="newarrivals"
-          className={`rounded-full border border-black 
-          px-6 sm:px-8 lg:px-10 
-          py-2 text-sm sm:text-base
-          transition-all duration-700 
-          hover:bg-red-400 hover:text-white ${
-            show ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"
+          to="bestsellers"
+          className={`text-sm sm:text-base font-medium
+          text-red-400! hover:text-red-500!
+          transition-all duration-700 whitespace-nowrap ${
+            show ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"
           }`}
         >
-          View All
+          View All →
         </NavLink>
 
       </div>
 
-      {/* ===== Slider ===== */}
-      <div className="px-12 mt-2">
+      {/* Slider */}
+      <div className="px-3 sm:px-4 lg:px-6">
         <Swiper
           modules={[Autoplay, Pagination]}
-          spaceBetween={20}
-          slidesPerView={4}
-          loop
+          spaceBetween={16}
+          loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,
@@ -77,12 +75,13 @@ const BestSellers = () => {
           }}
         >
           {products.map((_, index) => (
-            <SwiperSlide key={index} className="pb-16">
+            <SwiperSlide key={index} className="pb-10">
               <Card />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
+
     </div>
   );
 };

@@ -82,7 +82,7 @@ export default function FeaturedCollection() {
 
         {/* Background Image */}
         <div
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-400 pointer-events-none border-gray-50 ${
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-400 pointer-events-none rounded-2xl border-gray-50 ${
             fade ? "opacity-100" : "opacity-0"
           }`}
           style={{
@@ -96,7 +96,7 @@ export default function FeaturedCollection() {
             <div
                 key={index}
                 onMouseEnter={() => changeImage(index)}
-                className={`w-10 h-10 rounded-full cursor-pointer transition-colors duration-100 ${
+                className={`w-8 h-8 sm:w-10 sm:h-10 rounded-full cursor-pointer transition-colors duration-100 ${
                 activeIndex === index
                     ? "bg-red-400"
                     : "bg-white hover:bg-red-400"
@@ -106,8 +106,8 @@ export default function FeaturedCollection() {
         </div>
 
         {/* Shop Now Button */}
-        <div className="absolute bottom-30 left-1/2 -translate-x-1/2 z-20">
-            <NavLink to='newarrivals' className="px-8 py-3 bg-white text-black! font-medium rounded-full! transition-all duration-300 hover:bg-red-400! hover:text-white!">
+        <div className="absolute bottom-30 left-1/2 sm:left-1/2 -translate-x-1/2 z-20">
+            <NavLink to='newarrivals' className="px-3 sm:px-8 py-3 bg-white text-black! font-medium rounded-full! transition-all duration-300 hover:bg-red-400! hover:text-white!">
             Shop Now
             </NavLink>
         </div>

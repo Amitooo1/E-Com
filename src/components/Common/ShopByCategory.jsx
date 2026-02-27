@@ -136,7 +136,7 @@ const ShopByCategory = () => {
   }, [startTyping]);
 
   return (
-    <div ref={sectionRef} className="mb-11">
+    <div ref={sectionRef} className="py-1 sm:py-4">
       {/* Heading */}
       <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 px-4 sm:px-8">
         
@@ -144,9 +144,17 @@ const ShopByCategory = () => {
         <div className="flex-1 h-[1px] bg-black hidden sm:block" />
 
         {/* Text */}
-        <h2 className="font-semibold font-serif 
-            text-xl sm:text-2xl md:text-3xl lg:text-4xl 
-            text-center whitespace-nowrap">
+        <h2
+          className="
+            text-2xl!
+            sm:text-3xl! 
+            lg:text-4xl! 
+            font-serif 
+            font-semibold 
+            text-center 
+            whitespace-nowrap
+          "
+        >
           {typedText}
           {startTyping && typedText.length !== fullText.length && (
             <span className="animate-pulse">|</span>
@@ -159,7 +167,7 @@ const ShopByCategory = () => {
       </div>
 
       {/* Slider */}
-      <div className="px-10 py-10">
+      <div className="px-0 sm:px-6 lg:px-10 py-6 sm:py-10">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={20}
