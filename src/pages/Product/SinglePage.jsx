@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import Card from "../../components/Common/Card";
 import { Star } from "lucide-react";
-import Footer from "../../components/Layout/Footer";
+
+import pic1 from "../../assets/pic1.jpg"
+import pic2 from "../../assets/pic2.jpg"
+import pic3 from "../../assets/pic3.jpg"
 
 const SingleProductPage = () => {
   const images = [
-    "/src/assets/pic1.jpg",
-    "/src/assets/pic2.jpg",
-    "/src/assets/pic3.jpg",
+    pic1,
+    pic2,
+    pic3,
   ];
 
   const [mainImage, setMainImage] = useState(images[0]);
@@ -172,7 +175,7 @@ const SingleProductPage = () => {
 
       {/* SIMILAR */}
       <div className="px-2! sm:px-6! lg:px-8!">
-        <h3 className="text-xl font-bold mb-4">Similar Shoes</h3>
+        <h3 className="text-xl font-bold">Similar Shoes</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {/* 2 rows = 10 cards */}
           {[...Array(10)].map((_, i) => (
@@ -182,8 +185,8 @@ const SingleProductPage = () => {
       </div>
 
       {/* ALSO LIKED */}
-      <div className="px-2! sm:px-6! lg:px-8!">
-        <h3 className="text-xl font-bold mb-4">Customers Also Liked</h3>
+      <div className="px-2! sm:px-6! lg:px-8! pt-8">
+        <h3 className="text-xl font-bold">Customers Also Liked</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {[...Array(10)].map((_, i) => (
             <Card key={i} />

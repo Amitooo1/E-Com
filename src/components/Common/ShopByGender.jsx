@@ -38,7 +38,7 @@ const ShopByGender = () => {
           viewport={{ once: true }}
           className="group relative overflow-hidden rounded-2xl shadow-lg"
         >
-          <NavLink to="/man">
+          <NavLink to="/men">
             <img
               src={pic1}
               alt="Men"
