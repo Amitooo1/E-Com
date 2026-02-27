@@ -21,13 +21,13 @@ const fadeUp = {
 };
 
 const SectionWrapper = ({ children }) => (
-  <div className="max-w-[1440px] mx-auto px-0 sm:px-6! lg:px-10">
+  <div className="max-w-[1440px] mx-auto px-0! sm:px-6! lg:px-10">
     {children}
   </div>
 );
 
 const GlassCard = ({ children }) => (
-  <div className="relative rounded-none sm:rounded-2xl bg-white/60 backdrop-blur-lg border border-white/40 shadow-lg p-4 sm:p-8 lg:p-10">
+  <div className="relative rounded-none sm:rounded-2xl bg-white/60 backdrop-blur-lg border border-white/40 shadow-lg py-4 sm:py-8 lg:py-10">
     {children}
   </div>
 );
@@ -103,7 +103,7 @@ const HomePage = () => {
         viewport={{ once: true }}
         className=""
       >
-        <div className="relative rounded-2xl overflow-hidden bg-black border shadow-lg pb-4 mx-4 sm:pb-6! sm:pt-1! lg:p-10">
+        <div className="relative rounded-2xl overflow-hidden bg-black border shadow-lg pb-4 mx-2 sm:mx-6 lg:mx-8 md:pb-10! sm:pt-1! lg:p-10 ">
           <FeaturedCollection />
         </div>        
       </motion.section>
@@ -116,7 +116,7 @@ const HomePage = () => {
         viewport={{ once: true }}
         className="py-4 sm:py-16 lg:py-24"
       >
-        <div className="relative rounded-2xl overflow-hidden bg-black border shadow-lg pb-4 mx-4 sm:pb-6! sm:pt-1! lg:p-10">
+        <div className="relative rounded-2xl overflow-hidden bg-black border shadow-lg pb-4 mx-2 sm:mx-6 lg:mx-8 sm:pb-6! sm:pt-1! lg:p-10">
           <IgReels />
         </div>        
       </motion.section>

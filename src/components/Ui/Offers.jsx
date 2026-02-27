@@ -56,16 +56,13 @@ const Offers = () => {
           delay: 2500,
           disableOnInteraction: false,
         }}
-        // pagination={{
-        //   clickable: true,
-        // }}
         style={{ "--swiper-theme-color": "#f87171" }}
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="
-              px-4 py-3
-              sm:px-8 sm:py-4
+              px-4! py-3
+              sm:px-8! sm:py-4
               md:px-12 md:py-6
               bg-gradient-to-r from-orange-100 via-orange-50 to-red-100
               transition hover:shadow-md

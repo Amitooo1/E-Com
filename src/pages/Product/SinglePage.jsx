@@ -20,11 +20,17 @@ const SingleProductPage = () => {
   return (
     <div className="mt-15">
       {/* TOP */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 py-6 px-2! sm:px-6! lg:px-8!">
         {/* IMAGES */}
         <div>
-          <div className="border rounded-xl p-4">
-            <img src={mainImage} alt="shoe" className="w-full h-80 object-cover" />
+          <div className="rounded-2xl overflow-hidden shadow-lg bg-white">
+            <div className="aspect-square md:aspect-[3/4]">
+              <img
+                src={mainImage}
+                alt="product"
+                className="w-full h-full object-cover rounded-2xl transition duration-500 hover:scale-105"
+              />
+            </div>
           </div>
 
           <div className="flex gap-3 mt-3">
@@ -41,7 +47,7 @@ const SingleProductPage = () => {
         </div>
 
         {/* DETAILS */}
-        <div className="px-6">
+        <div>
           <h2 className="text-2xl font-bold">Men's Running Shoes</h2>
 
           <div className="flex items-center gap-2 mt-2">
@@ -121,7 +127,7 @@ const SingleProductPage = () => {
       </div>
 
       {/* PRODUCT DETAILS */}
-      <div className="px-6">
+      <div className="px-2! sm:px-6! lg:px-8!">
         <h3 className="text-xl font-bold">Product Details</h3>
 
         <div className="mt-3 space-y-2 text-gray-700">
@@ -132,7 +138,7 @@ const SingleProductPage = () => {
       </div>
 
       {/* REVIEWS */}
-      <div className="mt-10 p-6">
+      <div className="mt-10 px-2! sm:px-6! lg:px-8!">
         <h3 className="text-xl font-bold mb-4">Customer Reviews</h3>
 
         <div className="border p-3 rounded mb-3">
@@ -165,9 +171,9 @@ const SingleProductPage = () => {
       </div>
 
       {/* SIMILAR */}
-      <div className="p-6">
+      <div className="px-2! sm:px-6! lg:px-8!">
         <h3 className="text-xl font-bold mb-4">Similar Shoes</h3>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {/* 2 rows = 10 cards */}
           {[...Array(10)].map((_, i) => (
             <Card key={i} />
@@ -176,9 +182,9 @@ const SingleProductPage = () => {
       </div>
 
       {/* ALSO LIKED */}
-      <div className="p-6">
+      <div className="px-2! sm:px-6! lg:px-8!">
         <h3 className="text-xl font-bold mb-4">Customers Also Liked</h3>
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
           {[...Array(10)].map((_, i) => (
             <Card key={i} />
           ))}

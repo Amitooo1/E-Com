@@ -138,7 +138,7 @@ const ShopByCategory = () => {
   return (
     <div ref={sectionRef} className="py-1 sm:py-4">
       {/* Heading */}
-      <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 px-4 sm:px-8">
+      <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 px-2 sm:px-6 lg:px-8">
         
         {/* Left Line */}
         <div className="flex-1 h-[1px] bg-black hidden sm:block" />
@@ -167,7 +167,7 @@ const ShopByCategory = () => {
       </div>
 
       {/* Slider */}
-      <div className="px-0 sm:px-6 lg:px-10 py-6 sm:py-10">
+      <div className="px-2 sm:px-6! lg:px-8! py-6 sm:py-10">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={20}

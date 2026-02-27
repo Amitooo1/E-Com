@@ -78,7 +78,7 @@ export default function FeaturedCollection() {
         </div>
 
       {/* Slider */}
-      <div className="relative w-11/12 h-[80vh] mx-auto overflow-hidden">
+      <div className="relative w-11/12 h-[80vh] mx-auto overflow-hidden ">
 
         {/* Background Image */}
         <div

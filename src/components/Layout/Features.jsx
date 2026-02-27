@@ -26,7 +26,7 @@ const Features = () => {
 
   return (
     <section className="bg-gray-50 py-2 sm:py-2">
-      <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
+      <div className="max-w-[1440px] mx-auto px-2 sm:px-6! lg:px-8!">
 
         <div className="grid 
                         grid-cols-1 

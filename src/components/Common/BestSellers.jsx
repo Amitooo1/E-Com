@@ -30,7 +30,7 @@ const BestSellers = () => {
     <div ref={sectionRef} className="pt-6 sm:pt-8 overflow-x-hidden">
 
       {/* Header */}
-      <div className="flex items-baseline justify-between px-4 sm:px-6 lg:px-8 mb-2">
+      <div className="flex items-baseline justify-between px-2 sm:px-6! lg:px-8! mb-2">
 
         {/* Title */}
         <h2
@@ -58,7 +58,7 @@ const BestSellers = () => {
       </div>
 
       {/* Slider */}
-      <div className="px-3 sm:px-4 lg:px-6">
+      <div className="px-2 sm:px-6! lg:px-8!">
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={16}
